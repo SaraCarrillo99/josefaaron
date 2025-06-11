@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/styles.css">
+    <title>Document</title>
+</head>
+<style>
+body{background-color:azure}
+</style>
+<head>
+    <header id="tituloprincipal" ><img src="imagen percehron/BANNER-SECUNDARIO---EL-CABALLO-PERCHERON_1500x.webp" alt="logo">
+</header>
+</head>
+<body>
+  <p class="titulo">Mis 2 años JOSEF</p>  
+   <h2 class="titulo">Tiempo restante para el gran día</h2>
+  <p id="resultado"></p>
+  <script>
+    // Define la fecha de fin (puedes cambiarla a cualquier otra fecha)
+    const fechaFin = new Date("2025-07-05T00:00:00");
+
+    function actualizarContador() {
+      const ahora = new Date();
+      let diferencia = Math.abs(fechaFin - ahora) / 1000;
+
+      const dias = Math.floor(diferencia / (3600 * 24));
+      diferencia %= 3600 * 24;
+
+      const horas = Math.floor(diferencia / 3600);
+      diferencia %= 3600;
+
+      const minutos = Math.floor(diferencia / 60);
+      const segundos = Math.floor(diferencia % 60);
+
+      document.getElementById("resultado").innerText =
+        `${dias} días, ${horas} horas, ${minutos} minutos, ${segundos} segundos`;
+    }
+
+    // Actualiza el contador cada 1000ms (1 segundo)
+    setInterval(actualizarContador, 1000);
+
+    // Llama a la función una vez al cargar la página para mostrar el contador inmediatamente
+    window.onload = actualizarContador;
+  </script>
+</body>
+</html>

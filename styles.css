@@ -5,15 +5,6 @@
  .carousel-slide {display: flex;transition: transform 0.5s ease-in-out;}
 .carousel-slide img {width: 100%;flex-shrink: 0; }
 .carousel-buttons { position: absolute; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%);}
-.carousel-buttons button { background-color: rgba(0, 0, 0, 0.5); border: none; color: blue;font-size: 2rem;padding: 0.5rem 1rem;cursor: pointer;border-radius: 50%;
-    }
-
-    @media (max-width: 600px) {
-      .carousel-container {
-        width: 90%;
-      }
-
-      .carousel-buttons button {
-        font-size: 1.5rem;
-        padding: 0.3rem 0.6rem;
-      }
+.carousel-buttons button { background-color: rgba(0, 0, 0, 0.5); border: none; color: blue;font-size: 2rem;padding: 0.5rem 1rem;cursor: pointer;border-radius: 50%;}
+ @media (max-width: 600px) { .carousel-container {width: 90%;}
+.carousel-buttons button { font-size: 1.5rem;padding: 0.3rem 0.6rem;}

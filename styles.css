@@ -8,4 +8,4 @@
 .carousel-buttons button { background-color: rgba(0, 0, 0, 0.5); border: none; color: blue;font-size: 2rem;padding: 0.5rem 1rem;cursor: pointer;border-radius: 50%;}
  @media (max-width: 600px) { .carousel-container {width: 90%;}
 .carousel-buttons button { font-size: 1.5rem;padding: 0.3rem 0.6rem;}
-.subti{font-size:30px; text-align: center; color:#F3D56B}
+.subti{font-size:30px; text-align: center; color: #EED56B}

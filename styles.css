@@ -2,3 +2,36 @@
 #resultado{font-size: 25px;text-align: center;color: blueviolet;}
 #perche{ width: 100%; height: auto; max-width:100%}
 .d-block w-100{ width: 100%; height: auto; max-width:100%}
+.carousel {
+      position: relative;
+      width: 80%;
+      max-width: 600px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    .slides {
+      display: flex;
+      width: 300%;
+      transition: transform 0.5s ease;
+    }
+    .slides img {
+      width: 100%;
+      height: auto;
+    }
+    .controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+    .controls button {
+      background-color: rgba(0,0,0,0.5);
+      border: none;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 10px;
+    }

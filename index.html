@@ -44,24 +44,30 @@ body{background-color:azure}
     window.onload = actualizarContador;
   </script>
 <h1>Carrusel de fotos</h1>
-<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="1=imagen+1" class="d-block w-100" alt="paje">
-    </div>
-    <div class="carousel-item">
-      <img src="1año=Imagen+2" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="caballot=Imagen+3" class="d-block w-100" alt="caballo">
-    </div>
+<div class="carousel">
+  <div class="slides" id="slides">
+    <img src="caballo=Imagen+1" alt="Imagen 1">
+    <img src="1=Imagen+2" alt="Imagen 2">
+    <img src="1año=Imagen+3" alt="Imagen 3">
+    <img src="oveja=imagen+4" alt="Imagen 4">
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
+  <div class="controls">
+    <button onclick="moveSlide(-1)">❮</button>
+    <button onclick="moveSlide(1)">❯</button>
+  </div>
 </div>
+
+<script>
+  let index = 0;
+  function moveSlide(step) {
+    const slides = document.getElementById('slides');
+    const totalSlides = slides.children.length;
+    index = (index + step + totalSlides) % totalSlides;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  // Auto-cambio cada 5 segundos
+  setInterval(() => moveSlide(1), 5000);
+</script>
 </body>
 </html>

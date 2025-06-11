@@ -4,7 +4,7 @@
 .carousel {
       position: relative;
       width: 80%;
-      max-width: 600px;
+      max-width: 100%;
       overflow: hidden;
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0,0,0,0.2);

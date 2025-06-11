@@ -20,7 +20,7 @@
     }
     .controls {
       position: absolute;
-      top: 50%;
+      top: 100%;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -30,7 +30,7 @@
       background-color: rgba(0,0,0,0.5);
       border: none;
       color: white;
-      font-size: 2rem;
+      font-size: 10rem;
       cursor: pointer;
       padding: 10px;
     }

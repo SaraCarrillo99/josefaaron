@@ -1,7 +1,7 @@
 .titulo{font-size: 30px; text-align: center; color: blue;}
 #resultado{font-size: 25px;text-align: center;color: blueviolet;}
 header img{max-width:100%; width: 90px;height: 90px; margin-right: 30px;position:absolute;right: 10px; top: 10px;}
-.perche{  width: 100%;height: auto;display: block;max-width: 100%}
+.perche{max-width:100%; width: 90px;height: 90px; margin-right: 30px;position:absolute;right: 10px; top: 10px;}
 .carousel-container { position: relative;max-width: 100%;width: 600px;margin: 2rem auto;overflow: hidden; border-radius: 10px;box-shadow: 0 0 10px rgba(0,0,0,0.2);}
 .carousel-slide {display: flex;transition: transform 0.5s ease-in-out;}
 .carousel-slide img {width: 100%;flex-shrink: 0; }

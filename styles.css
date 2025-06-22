@@ -10,3 +10,4 @@ header img{width: 100%;height: auto; display: block;max-width: 100%;}
  @media (max-width: 600px) { .carousel-container {width: 90%;}
 .carousel-buttons button { font-size: 1.5rem;padding: 0.3rem 0.6rem;}
 .subti{font-size: 30px; ;text-align: center;color: blueviolet;}
+ body{back-groud-image:
